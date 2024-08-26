@@ -14,7 +14,7 @@ driver.maximize_window()
 
 # open the url
 driver.get('https://www.google.com/')
-
+sleep(3)
 # populate search field
 search = driver.find_element(By.NAME, 'q')
 search.clear()
