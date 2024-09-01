@@ -14,14 +14,14 @@ driver.maximize_window()
 
 # open the url
 driver.get('https://www.google.com/')
-sleep(3)
+sleep(5)
 # populate search field
 search = driver.find_element(By.NAME, 'q')
 search.clear()
 search.send_keys('Car')
 
-# wait for 4 sec
-sleep(4)
+# wait for 6 sec
+sleep(6)
 
 # click search button
 driver.find_element(By.NAME, 'btnK').click()
