@@ -18,7 +18,7 @@ sleep(5)
 # populate search field
 search = driver.find_element(By.NAME, 'q')
 search.clear()
-search.send_keys('Car')
+search.send_keys('books')
 
 # wait for 6 sec
 sleep(6)
@@ -27,7 +27,7 @@ sleep(6)
 driver.find_element(By.NAME, 'btnK').click()
 
 # verify search results
-assert 'car'.lower() in driver.current_url.lower(), f"Expected query not in {driver.current_url.lower()}"
+assert 'books'.lower() in driver.current_url.lower(), f"Expected query not in {driver.current_url.lower()}"
 print('Test Passed')
 
 driver.quit()

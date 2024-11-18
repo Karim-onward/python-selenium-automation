@@ -10,6 +10,7 @@ SEARCH_SUBMIT = (By.NAME, 'btnK')
 @given('Open Google page')
 def open_google(context):
     context.driver.get('https://www.google.com/')
+    sleep(2)
 
 
 @when('Input {search_word} into search field')
