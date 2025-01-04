@@ -4,7 +4,7 @@ Feature: Tests for cart icon
   Scenario: User can click on the cart icon
     Given Open target page
     When Click on cart icon
-    Then Verify “Your cart is empty” message is shown
+    Then Verify “Your cart is empty” text is shown
 
   Scenario: User can navigate to sign in
     Given Open target main page

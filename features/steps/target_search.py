@@ -15,7 +15,7 @@ def click_cart_icon(context):
 
 
 
-@then('Verify “Your cart is empty” message is shown')
+@then('Verify “Your cart is empty” text is shown')
 def verify_cart_is_empty(context):
     sleep(5)
     expected_text = 'Your cart is empty'
@@ -43,6 +43,7 @@ def navigate_to_sign_in_page(context):
 @when('click sign in')
 def click_sign_in_(context):
     context.driver.find_element(By.CSS_SELECTOR, 'button[data-test="accountNav-signIn"]').click()
+    sleep(2)
 
 
 @then('verify sign In form open')
