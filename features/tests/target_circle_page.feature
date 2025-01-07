@@ -1,6 +1,6 @@
 # Created by karimonward at 02/01/2025
-Feature: # Enter feature name here
-  # Enter feature description here
+Feature: tests for target circle page
 
-  Scenario: # Enter scenario name here
-    # Enter steps here
+  Scenario: user can see header link
+    Given open target circle page
+    Then Verify that there are at least 10 benefit cells
